@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Data (large, and not yours to redistribute) and trained model (can be 100+ MB)
+data/raw/*
+data/processed/*
+models/*.joblib
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# MLflow local tracking
+mlflow.db
+mlruns/
+mlartifacts/
+
+# Keep results/ and figures/ committed: they are your evidence.
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
